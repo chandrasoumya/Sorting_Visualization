@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,600;1,700&display=swap');
+body{
+    display: flex;
+    gap:100px;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./background.jpg");
+    background-size:cover;
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    width: 600px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
+    gap:3px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgb(13, 0, 42);
+    border: 2px solid black;
+    margin-top: 20px;
+}
+h1{
+    position: absolute;
+    top:40px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 5px rgb(1, 5, 41);
+    padding:3px;
+    outline: 2px solid black;
+}
+#container .bar{
+    background-color:black;
+    border-radius: 2px;  
+}
+.button{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 10px rgb(1, 5, 41);
+    background-color: white;
+    font-size: larger;
+    font-style: bold;
+    color:black;
+}
+
+.button:hover{
+    background-color: rgb(1, 5, 41);
+    color: white;
+    box-shadow: 10px 10px 10px rgb(105, 116, 206);
+    transition: 0.5s;
+}
+
+.mainPageButton{
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    box-shadow: 10px 10px 10px rgb(1, 5, 41);
+    background-color: white;
+    font-size: larger;
+    font-style: bold;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 250px;
+}
+
+.mainPageButton:hover{
+    background-color: rgb(1, 5, 41);
+    color: white;
+    box-shadow: 10px 10px 10px rgb(105, 116, 206);
+    transition: 0.5s;
+}
+
+.footer{
+    width:100%;
+    height:50px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+}
+
+img{
+    height: 200px;
+    width:400px;
+    z-index: 0;
+    position: absolute;
+    top:0px;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    body{
+        background-size: 1500px 1500px;
+        gap:50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    body{
+        background-size: 1500px 1500px;
+        gap:15px;
+
+    }
+    #container{
+        width: 502px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    /* main page */
+    body{
+        flex-direction: column;
+        gap: 0px;
+        background-size: 800px 800px;  
+    }
+    .mainPageButton{
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;   
+        font-size: small;
+        position: absolute;
+    }
+    img{
+        height: 100px;
+        width:200px;
+    }
+    h1{
+        font-size: x-large;
+        top: 20px;
+    }
+    
+    #bs{
+        top:-100px
+    }
+    #is{
+        top:20px
+    }
+    #ss{
+        top:140px
+    }
+
+    /* sorting page */
+    body #title{
+        font-size: small;
+        position: absolute;
+        top:150px;
+        z-index: 1;
+    }
+    #rand{
+        position: absolute;
+        top:10px;
+        font-size: small;
+    }
+    #ply{
+        position: absolute;
+        top:400px;
+        font-size: small;
+    }
+    #container{
+        height: 220px;
+        width: 220px;
+        position: absolute;
+        top:130px;
+        z-index: 0;
+    }
+    #container .bar{
+        width:4px;
+        gap:1px;
+        height:min-content;
+    }
+}
